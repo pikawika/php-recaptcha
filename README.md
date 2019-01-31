@@ -20,11 +20,11 @@ We will also discuss how you can implement a callback function to trigger what o
 We will be changing an existing contact form which uses AJAX to show a succes message after an email is succesfully send. Our environment before implementing reCAPTCHA looks like this:
 
 - initial form
-	- <img src="assets/before/empty-form.PNG" width="400">
+	- <kbd><img src="assets/before/empty-form.PNG" width="400"></kbd>
 - filled in with optional phone number
-	- <img src="assets/before/filled-in.PNG" width="400">
+	- <kbd><img src="assets/before/filled-in.PNG" width="400"></kbd>
 - succesfully send 
-	- <img src="assets/before/success.PNG" width="400">
+	- <kbd><img src="assets/before/success.PNG" width="400"></kbd>
 
 ## Wanted result:
 
