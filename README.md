@@ -40,6 +40,13 @@ We will be changing an existing contact form which uses AJAX to show a succes me
 - Sign in with a google account if not already logged in. You can have multiple free keys on one account
 - You should see a form "register a new site"
 	- <kbd><img src="assets/adminpanel/add-new-captcha.PNG" width="400"></kbd>
+	- Choose invisible
+	- Fill in all of the domains you want to use the current key for
+	- Accept the reCAPTCHA Terms of Service.
+- if everything is correct you should see a screen with your
+	- Site key
+	- Secret key
+	- <kbd><img src="assets/adminpanel/keys.PNG" width="400"></kbd>
 
 ## Used sources
 
