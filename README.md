@@ -27,6 +27,7 @@ A working example can be found on my website's contact form:
 > - [Is it allowed to remove the ReCAPTCHA badge in the bottom right corner?](#is-it-allowed-to-remove-the-recaptcha-badge-in-the-bottom-right-corner)
 > - [Removing the ReCAPTCHA badge in the bottom right corner (optional)](#removing-the-recaptcha-badge-in-the-bottom-right-corner-optional)
 > - [Common problems](#common-problems)
+> - [I receive an image validating reCAPTCHA instead of an invisble one](#i-receive-an-image-validating-recaptcha-instead-of-an-invisble-one)
 > - [Used sources](#used-sources)
 
 
@@ -332,6 +333,12 @@ Whenever you're encountering problems always check the following:
   - Check if your code doesn't contain stuff like YOUR_KEY_HERE, this should be replaced by your actual key
   - Check if your code doesn't contain variable names from my project
     - eg the php var cf_ReCaptchaToken is a name I used in this demo, if you changed this somewhere  you should change it occurrence everywhere
+
+## I receive an image validating reCAPTCHA instead of an invisble one
+
+Google's invisible reCAPATCHA only works when it's sure you're not a bot, if it ever doubts that it will show an image reCAPATCHA. When testing your code you post a lot of request in a short time period which often causes an additional reCAPATCHA to appear to validate you're not a bot.
+
+
 
 ## Used sources
 
