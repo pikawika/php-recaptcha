@@ -91,13 +91,10 @@ Simply add the following css to your style.css or include it in style tags
 Now add the required usage of reCAPATCHA anywhere near your form where you use the reCAPATCHA, in this example we'll place it underneath the submit button.
 
 ```html
-<div class="col-md-12">
-                                <div class="actions">
-                                    <input type="submit" value="<?php echo $contactStaticText->buttonSend ?> "id="submitButton" class="btn btn-lg btn-contact-bg  wow wowRepeat fadeInRight" data-wow-delay=".2s" title="<?php echo $contactStaticText->buttonSend ?>"/></div>
-                                <p style="font-size: 9px !important;">This site is protected by reCAPTCHA and the Google
+<p style="font-size: 9px !important;">This site is protected by reCAPTCHA and the Google
                                     <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-                                    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
-                            </div>
+                                    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                                </p>
 ```
 
 
