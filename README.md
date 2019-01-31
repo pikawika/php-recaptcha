@@ -15,7 +15,7 @@ We will also discuss how you can implement a callback function to trigger what o
 | :---     | :---                          | :---                                |
 | Bontinck Lennert | [GitHub Lennert](https://www.github.com/pikawika) | [info@lennertbontinck.com](mailto:info@lennertbontinck.com) |
 
-## Context
+## Current setup
 
 We will be changing an existing contact form which uses AJAX to show a succes message after an email is succesfully send. Our environment before implementing reCAPTCHA looks like this:
 
@@ -26,13 +26,20 @@ We will be changing an existing contact form which uses AJAX to show a succes me
 - succesfully send 
 	- <img src="assets/before/success.PNG" width="400">
 
-The result will:
+## Wanted result:
 
 - Keep the contact form easy to use due to an invisible captcha which requires no input most of the time.
 - Use a simple image clicking captcha if user is suspected to be a bot.
 - Stop a LOT (almost all) of bots from using our php driven (eg contact) form.
 - Hide the ugly reCAPTCHA overlay yet will still be allowed by google by adding our own disclaimer.
 - Still trigger the previous mentioned ajax function to hide the contact form and show a succes message.
+
+## Getting the required free reCAPTCHA keys:
+
+- Go to [the Recaptcha admin panel](https://google.com/recaptcha/admin).
+- Sign in with a google account if not already logged in. You can have multiple free keys on one account
+- You should see a form "register a new site"
+	- <kbd><img src="assets/adminpanel/add-new-captcha.PNG" width="400"></kbd>
 
 ## Used sources
 
