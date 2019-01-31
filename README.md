@@ -87,7 +87,7 @@ For the reCAPTCHA to work we need to manually write some code in our HTML file. 
 Include the following scripts tag to your html webpage which has the form on it
 
 ```html
-<!-- JQuery -->
+<!-- JQuery - I downloaded this locally -->
 <script src="assets/js/jquery-1.12.4.min.js"></script>
 <!-- ReCAPTCHA  -->
 <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -101,8 +101,8 @@ Add the invisible reCAPTCHA to the form as followed, notice we need to change th
 <div class="g-recaptcha"
      data-sitekey="YOUR_SITE_KEY"
      data-size="invisible"
-     data-callback="formSubmit"
->
+     data-callback="formSubmit">
+</div>
 ```
 
 <small>!!! YOUR_SITE_KEY refers to the site key you received from the previous step [Getting the required free reCAPTCHA keys](#getting-the-required-free-recaptcha-keys) </small>
