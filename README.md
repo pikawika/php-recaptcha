@@ -26,6 +26,7 @@ A working example can be found on my website's contact form:
 >   - [Checking if our captcha is valid](#checking-if-our-captcha-is-valid)
 > - [Is it allowed to remove the ReCAPTCHA badge in the bottom right corner?](#is-it-allowed-to-remove-the-recaptcha-badge-in-the-bottom-right-corner)
 > - [Removing the ReCAPTCHA badge in the bottom right corner (optional)](#removing-the-recaptcha-badge-in-the-bottom-right-corner-optional)
+> - [Common problems](#common-problems)
 > - [Used sources](#used-sources)
 
 
@@ -166,7 +167,7 @@ Now that our form is prepared we need to override the submit function of our for
 
 In one of the previous steps we included the invisible reCAPTCHA  and gave it a callback function using the data-callback attribute. we named the function formSubmit and need to implement it. For demonstration purposes i wrote this at the bottom of my html file in a script tag.
 
-The most important thing here is the fact we need to pass the response from our reCAPTCHA  post to our php (eg contact.php) as well as our other form variables. 
+The most important thing here is the fact we need to pass the response from our reCAPTCHA  post to our php URL (eg contact.php) as well as our other form variables. 
 
 On success I'm showing the message my PHP server responded by using an animation and showing it where the form used to be.
 
@@ -321,7 +322,16 @@ This will hide the badge and show the following subtext on your contact form.
 
 > <kbd><img src="assets/after/empty-form.PNG" width="600"></kbd>
 
+## Common problems 
 
+Whenever you're encountering problems always check the following:
+
+- Are you testing the code locally? This won't work since we specified which domains our key is allowed to be used on. 
+  - If you want to test the code before putting it online you can create a test subdomain for testing purposes
+- Did you replace all values with the ones you need
+  - Check if your code doesn't contain stuff like YOUR_KEY_HERE, this should be replaced by your actual key
+  - Check if your code doesn't contain variable names from my project
+    - eg the php var cf_ReCaptchaToken is a name I used in this demo, if you changed this somewhere  you should change it occurrence everywhere
 
 ## Used sources
 
